@@ -1,0 +1,42 @@
+{
+  "name" : "broadshout/bs-locale",
+  "description" : "Module for handling various locale functions.",
+      "license": "Copyright 2014 Broadshout Technologies SARL",
+           "type": "zf2-module",
+  "require" : {
+     "php" : ">=7.0"
+  },
+  "require-dev" : {
+  "zendframework/zend-component-installer":"dev-master",
+  "zfcampus/zf-development-mode":"dev-master",
+    "phpunit/phpunit" : ">=4"
+  },
+   "repositories" : [ {
+    "type" : "composer",
+    "url" : "https://packages.zendframework.com/"}
+
+  ],
+  "authors" : [ {
+    "name" : "Mat Wright",
+    "email" : "mat@bstechnologies.com",
+    "homepage" : "http://www.bstechnologies.com/"
+  } ],
+  "keywords" : [ "zf2" ],
+  "extra" : {
+    "branch-alias" : {
+    },
+    "zf": {
+
+  }
+  },
+   "autoload" : {
+    "psr-4" : {
+      "BsLocale\\" : "src/"
+    },
+    "classmap" : [     "./Module.php"]
+  },
+   "autoload-dev": {
+        "psr-4": { "BsLocaleTest\\": "test/" }
+    },
+  "homepage" : "http://bstechnologies.com"
+}
